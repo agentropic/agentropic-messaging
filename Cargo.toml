@@ -12,8 +12,7 @@ categories = ["concurrency", "network-programming"]
 readme = "README.md"
 
 [dependencies]
-# Works locally with path, falls back to crates.io if path doesn't exist
-agentropic-core = { version = "0.1.0", path = "../agentropic-core" }
+agentropic-core = { git = "https://github.com/pycogram/agentropic-core", branch = "main" }
 
 async-trait = "0.1"
 tokio = { version = "1.0", features = ["full", "sync"] }
