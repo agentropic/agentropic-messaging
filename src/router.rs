@@ -51,7 +51,7 @@ impl Router {
         mailbox.send(message).map_err(MessagingError::SendFailed)
     }
 
-    /// Create a new mailboxx
+    /// Create a new mailbox
     pub fn create_mailbox(&self) -> Mailbox {
         Mailbox::new()
     }
